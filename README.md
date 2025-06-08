@@ -4,8 +4,8 @@
 
 Ini adalah proyek kartu biodata interaktif yang dibuat dengan HTML, CSS, dan JavaScript.
 
-[![Lihat Kode](https://img.shields.io/badge/Lihat-Kode-blue?style=for-the-badge)](./public/index.html)
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://yuuashura.github.io/biodata-yuu-de-fontaine/public/index.html)
+[![Lihat Kode](https://img.shields.io/badge/Kode-blue?style=for-the-badge)](./public/index.html)
+[![Live Demo](https://img.shields.io/badge/Live-brightgreen?style=for-the-badge)](https://yuuashura.github.io/biodata-yuu-de-fontaine/public/index.html)
 
 ---
 
