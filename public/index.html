@@ -152,22 +152,17 @@
             const titel = document.getElementById('titel');
 
             function showPage(index) {
-                // Sembunyikan semua halaman
                 pages.forEach(page => {
                     page.classList.remove('is-visible');
                 });
-                // Tampilkan halaman yang dipilih
                 pages[index].classList.add('is-visible');
                 
-                // === LOGIKA BARU UNTUK VISIBILITAS TOMBOL ===
-                // Menggunakan 'visibility' agar layout tidak bergeser
+        
                 if (index === 0) {
-                    // Halaman Pertama: Sembunyikan "Kembali", tampilkan "Selanjutnya"
                     titel.style.visibility = 'visible';
                     kembaliBtn.style.visibility = 'hidden';
                     selanjutnyaBtn.style.visibility = 'visible';
                 } else if(index === 1) {
-                    // Halaman Lainnya: Tampilkan kedua tombol
                     kembaliBtn.style.visibility = 'visible';
                     selanjutnyaBtn.style.visibility = 'hidden';
                 }
@@ -182,23 +177,18 @@
                 currentPageIndex = index;
             }
 
-            // Tampilkan halaman pertama dan atur tombol saat dimuat
             showPage(currentPageIndex);
 
-            // Logika tombol "Selanjutnya"
             selanjutnyaBtn.addEventListener('click', function() {
                 let nextIndex = currentPageIndex + 1;
-                // Jika sudah di halaman terakhir, kembali ke halaman pertama
                 if (nextIndex >= totalPages) {
                     nextIndex = 0;
                 }
                 showPage(nextIndex);
             });
 
-            // Logika tombol "Kembali"
             kembaliBtn.addEventListener('click', function() {
                 let prevIndex = currentPageIndex - 1;
-                // Jika sudah di halaman pertama, pergi ke halaman terakhir
                 if (prevIndex < 0) {
                     prevIndex = totalPages - 1;
                 }
