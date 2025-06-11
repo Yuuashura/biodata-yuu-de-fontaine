@@ -29,10 +29,9 @@ body {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
     color: #000000;
     text-align: center;
-    padding: 30px 30px 40px 30px; /* Tambah padding-top */
+    padding: 30px 30px 40px 30px;
     position: relative;
     margin: 0px 20px 0px 20px;
-    /* overflow: hidden; <- Pastikan ini tidak ada atau di-comment */
 }
 
 .profile-pic {
@@ -41,7 +40,7 @@ body {
     border-radius: 50%;
     border: 4px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
-    margin-top: 0px; /* Coba kurangi jika masih terpotong, misal -90px */
+    margin-top: 0px;
     position: relative;
     z-index: 10;
 }
@@ -187,11 +186,6 @@ body {
     height: 24px;
 }
 
-/* ================================================= */
-/* ===== MULAI KODE CSS RESPONSIVE (MEDIA QUERY) ===== */
-/* ================================================= */
-
-/* --- Untuk Tampilan Tablet --- */
 @media (max-width: 768px) {
     .name {
         font-size: 1.8em;
@@ -202,7 +196,7 @@ body {
     }
 }
 
-/* --- Untuk Tampilan Handphone --- */
+/* --- Handphone --- */
 @media (max-width: 540px) {
     .biodata-card {
         padding: 20px 20px 20px 20px; 
