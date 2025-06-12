@@ -67,7 +67,6 @@ body {
     margin-bottom: 15px;
 }
 
-/* Animasi */
 .content-flipper {
     display: grid;
     min-height: 320px; 
@@ -185,18 +184,7 @@ body {
     width: 24px;
     height: 24px;
 }
-
-@media (max-width: 768px) {
-    .name {
-        font-size: 1.8em;
-    }
-
-    .title {
-        font-size: 1.1em;
-    }
-}
-
-/* --- Handphone --- */
+/* hp */
 @media (max-width: 540px) {
     .biodata-card {
         padding: 20px 20px 20px 20px; 
